@@ -1,2 +1,2 @@
 # MyHiddenCam
-Android app: record and take hidden photos and videos without preview
+Take hidden photos without preview. See this video tutorial: 
