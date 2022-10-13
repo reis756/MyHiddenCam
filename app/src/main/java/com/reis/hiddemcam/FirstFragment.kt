@@ -24,7 +24,8 @@ class FirstFragment : Fragment(){
 
     private val permissions = arrayOf(
         Manifest.permission.WRITE_EXTERNAL_STORAGE,
-        Manifest.permission.CAMERA
+        Manifest.permission.CAMERA,
+        Manifest.permission.RECORD_AUDIO
     )
 
     override fun onCreateView(
@@ -44,6 +45,10 @@ class FirstFragment : Fragment(){
 
         binding.buttonTakePicture.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+        }
+
+        binding.buttonRecordVideo.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_VideoFragment)
         }
     }
 

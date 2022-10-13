@@ -34,6 +34,8 @@ private const val DEFAULT_FILENAME = "yyyy-MM-dd-HH-mm-ss-SSS"
 /** [DEFAULT_PHOTO_EXTENSION] specifies the default file extension for the captured images */
 private const val DEFAULT_PHOTO_EXTENSION = ".jpg"
 
+private const val DEFAULT_VIDEO_EXTENSION = ".mp4"
+
 /** [requiredPermissions] specifies the list of permissions required by the library */
 private val requiredPermissions =
     arrayOf(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -67,6 +69,13 @@ internal fun createFile(
 ): File = File(
     baseDirectory, SimpleDateFormat(DEFAULT_FILENAME, Locale.US)
         .format(System.currentTimeMillis()) + DEFAULT_PHOTO_EXTENSION
+)
+
+internal fun createVideoFile(
+    baseDirectory: File
+): File = File(
+    baseDirectory, SimpleDateFormat(DEFAULT_FILENAME, Locale.US)
+        .format(System.currentTimeMillis()) + DEFAULT_VIDEO_EXTENSION
 )
 
 /** An extension function to check if all [requiredPermissions] are granted */

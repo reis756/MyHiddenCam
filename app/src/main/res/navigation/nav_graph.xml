@@ -14,6 +14,10 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_VideoFragment"
+            app:destination="@id/VideoFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -23,6 +27,17 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/VideoFragment"
+        android:name="com.reis.hiddemcam.VideoFragment"
+        android:label="@string/video_fragment_label"
+        tools:layout="@layout/fragment_video">
+
+        <action
+            android:id="@+id/action_Video_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>
