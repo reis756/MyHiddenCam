@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.reisdeveloper.todolist",
+               "sha256_cert_fingerprints": ["50:11:CC:FC:4F:B8:2A:BC:D9:57:6E:07:D5:59:92:22:83:75:A2:7A:06:30:C0:68:09:6D:73:07:D5:47:EF:ED"] }
+}]
